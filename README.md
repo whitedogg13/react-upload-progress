@@ -8,6 +8,12 @@ React component to observe file upload / form post progress using render props, 
 2. You will have full control for the UI part, thanks to render props pattern
 3. You can still customize the xhr detail, wuch as headers, withCredentials, and the data to send
 
+## Install
+
+```
+npm install --save react-upload-progress
+```
+
 ## Usage
 
 ```javascript
