@@ -125,6 +125,7 @@ function xhrUpload(
     if (4 == this.readyState) {
       onDone &&
         onDone({
+          statusCode: xhr.status,
           type: xhr.responseType || 'text',
           data: xhr.response,
         });

@@ -163,6 +163,7 @@ function xhrUpload(_ref2) {
   xhr.onreadystatechange = function (e) {
     if (4 == this.readyState) {
       onDone && onDone({
+        statusCode: xhr.status,
         type: xhr.responseType || 'text',
         data: xhr.response
       });
@@ -174,4 +175,3 @@ function xhrUpload(_ref2) {
 
 exports.default = UploadObserver;
 exports.UploadStatus = UploadStatus;
-//# sourceMappingURL=index.js.map
